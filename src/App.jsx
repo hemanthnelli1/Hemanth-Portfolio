@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Mail, Globe, ArrowUpRight } from "lucide-react";
 import Hero from "./components/Hero";
+import { Analytics } from "@vercel/analytics/react";
 import FloatingDock from "./components/FloatingDock";
 import SectionHeading from "./components/SectionHeading";
 import TextGenerateEffect from "./components/TextGenerateEffect";
@@ -203,8 +204,9 @@ export default function App() {
         </div>
       </section>
 
-      <Footer />
-      <FloatingDock />
+     <Footer />
+<FloatingDock />
+<Analytics />
     </div>
   );
 }
