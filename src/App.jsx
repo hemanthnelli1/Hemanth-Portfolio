@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Mail, Globe, ArrowUpRight } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 import Hero from "./components/Hero";
 import FloatingDock from "./components/FloatingDock";
 import SectionHeading from "./components/SectionHeading";
@@ -205,6 +206,7 @@ export default function App() {
 
       <Footer />
       <FloatingDock />
+      <Analytics />
     </div>
   );
 }
