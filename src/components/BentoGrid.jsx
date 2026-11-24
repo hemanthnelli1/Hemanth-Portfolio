@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
-import { Code2, Server, Brain, Shield } from "lucide-react";
+import { Brain, Code2, Network, Server, Shield, Wrench } from "lucide-react";
 import { cn } from "../lib/utils";
 const groupedSkills = [
-  { icon: "code", title: "Web foundations", subtitle: "Languages & Frontend", items: ["Python", "JavaScript", "React", "HTML", "CSS", "Bootstrap"] },
-  { icon: "server", title: "Backend systems", subtitle: "Server, Data & Tools", items: ["Node.js", "Flask", "FastAPI", "MySQL", "SQLite", "Git", "GitHub"] },
-  { icon: "brain", title: "Algorithms & AI", subtitle: "Problem Solving & ML", items: ["Sliding Window", "Segment Trees", "Dynamic Programming", "Graph Algorithms", "Scikit-learn"] },
-  { icon: "shield", title: "Security", subtitle: "Security Tooling", items: ["Wireshark", "Nmap", "Ethical Hacking"] },
+  { icon: "code", title: "Web & languages", subtitle: "Frontend foundations", items: ["Python", "JavaScript", "SQL", "React", "HTML", "CSS", "Bootstrap"] },
+  { icon: "server", title: "Backend & data", subtitle: "APIs and databases", items: ["Node.js", "Flask", "FastAPI", "REST APIs", "MySQL", "SQLite"] },
+  { icon: "brain", title: "AI & cloud", subtitle: "Machine learning", items: ["TensorFlow", "Scikit-learn", "Gemini AI", "Cloud Deployment"] },
+  { icon: "network", title: "Systems", subtitle: "Distributed computing", items: ["Distributed Systems", "Computer Networks", "Linux", "Windows"] },
+  { icon: "wrench", title: "Engineering", subtitle: "Core foundations", items: ["Data Structures & Algorithms", "OOP", "DBMS", "System Design"] },
+  { icon: "shield", title: "Security & tools", subtitle: "Analysis workflow", items: ["Wireshark", "Nmap", "Ethical Hacking", "Git", "GitHub", "Microsoft Excel"] },
 ];
-const iconMap = { code: Code2, server: Server, brain: Brain, shield: Shield };
+const iconMap = { code: Code2, server: Server, brain: Brain, network: Network, wrench: Wrench, shield: Shield };
 
 function BentoCard({ item, i }) {
   const Icon = iconMap[item.icon];

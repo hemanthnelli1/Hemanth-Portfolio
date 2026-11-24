@@ -4,9 +4,6 @@ import Hero from "./components/Hero";
 import { Analytics } from "@vercel/analytics/react";
 import FloatingDock from "./components/FloatingDock";
 import SectionHeading from "./components/SectionHeading";
-import TextGenerateEffect from "./components/TextGenerateEffect";
-import TracingBeam from "./components/TracingBeam";
-import Timeline from "./components/Timeline";
 import BentoGrid from "./components/BentoGrid";
 import ProjectsGrid from "./components/ProjectsGrid";
 import InfiniteMovingCards from "./components/InfiniteMovingCards";
@@ -20,23 +17,7 @@ import LanguageName from "./components/LanguageName";
 import ExperienceGlobe from "./components/ExperienceGlobe";
 import MysteryVault from "./components/MysteryVault";
 import portraitPhoto from "./assets/hemanth-photo.jpg";
-import { about, achievements, experience, profile } from "./data/content";
-
-function StatCard({ value, label, i = 0 }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-10%" }}
-      transition={{ duration: 0.4, delay: i * 0.06 }}
-      whileHover={{ y: -3 }}
-      className="rounded-xl border border-line bg-panel px-5 py-4 text-center shadow-[0_1px_0_rgba(0,0,0,0.03)]"
-    >
-      <div className="font-mono text-2xl font-bold text-ink">{value}</div>
-      <div className="mt-1 font-mono text-[10.5px] tracking-wide text-text-faint">{label}</div>
-    </motion.div>
-  );
-}
+import { achievements, experience, profile } from "./data/content";
 
 function AchievementCard({ item, i = 0 }) {
   return (

@@ -35,44 +35,44 @@ export const about = {
 export const skills = [
   {
     icon: "zap",
-    title: "Languages",
-    subtitle: "Core Programming",
-    items: ["Python", "JavaScript"],
+    title: "Web & Languages",
+    subtitle: "Frontend Foundations",
+    items: ["Python", "JavaScript", "SQL", "React", "HTML", "CSS", "Bootstrap"],
     span: "md:col-span-2",
   },
   {
     icon: "palette",
-    title: "Frontend",
-    subtitle: "Web Technologies",
-    items: ["React", "HTML", "CSS", "Bootstrap"],
+    title: "Backend & Data",
+    subtitle: "APIs and Databases",
+    items: ["Node.js", "Flask", "FastAPI", "REST APIs", "MySQL", "SQLite"],
     span: "md:col-span-1",
   },
   {
     icon: "server",
-    title: "Backend",
-    subtitle: "Server & Database",
-    items: ["Node.js", "Flask", "FastAPI", "MySQL", "SQLite"],
+    title: "AI & Cloud",
+    subtitle: "Machine Learning",
+    items: ["TensorFlow", "Scikit-learn", "Gemini AI", "Cloud Deployment"],
     span: "md:col-span-1",
   },
   {
     icon: "brain",
-    title: "Algorithms & ML",
-    subtitle: "DSA & Machine Learning",
-    items: ["Sliding Window", "Segment Trees", "Dynamic Programming", "Graph Algorithms", "Greedy", "Scikit-learn"],
+    title: "Systems",
+    subtitle: "Distributed Computing",
+    items: ["Distributed Systems", "Computer Networks", "Linux", "Windows"],
     span: "md:col-span-2",
   },
   {
     icon: "shield",
-    title: "Security",
-    subtitle: "Cyber Security",
-    items: ["Wireshark", "Nmap", "Ethical Hacking"],
+    title: "Engineering",
+    subtitle: "Core Foundations",
+    items: ["Data Structures & Algorithms", "OOP", "DBMS", "System Design"],
     span: "md:col-span-1",
   },
   {
     icon: "wrench",
-    title: "Tools",
-    subtitle: "Dev Environment",
-    items: ["Git", "GitHub"],
+    title: "Security & Tools",
+    subtitle: "Analysis Workflow",
+    items: ["Wireshark", "Nmap", "Ethical Hacking", "Git", "GitHub", "Microsoft Excel"],
     span: "md:col-span-1",
   },
 ];
@@ -139,6 +139,14 @@ export const projects = [
   },
   {
     index: "02",
+    title: "SecurityBlast - Attack Path & Blast-Radius Analysis",
+    description:
+      "Deployed Node.js security platform that correlates security events, models access relationships, analyzes attack paths, and calculates explainable 0-100 exposure scores. Includes Server-Sent Events, incident correlation, impact analysis, and simulated remediation.",
+    tags: ["Node.js", "Server-Sent Events", "Attack Paths", "Incident Correlation", "Exposure Scoring"],
+    status: "featured",
+  },
+  {
+    index: "03",
     title: "TrueLensX — AI Image Forensics Platform",
     description:
       "Full-stack AI image forensics platform (TensorFlow, Flask, React) for detecting real vs. AI-generated images, with explainable AI and forensic analysis.",
@@ -147,7 +155,7 @@ export const projects = [
     status: "live",
   },
   {
-    index: "03",
+    index: "04",
     title: "Resume Intelligence Platform",
     description:
       "AI-powered resume analyzer (Flask, Gemini AI) performing ATS scoring and skill extraction in under 2 seconds on standard PDF resumes, validated across 10 resumes with different layouts.",
