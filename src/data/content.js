@@ -143,7 +143,8 @@ export const projects = [
     description:
       "Deployed Node.js security platform that correlates security events, models access relationships, analyzes attack paths, and calculates explainable 0-100 exposure scores. Includes Server-Sent Events, incident correlation, impact analysis, and simulated remediation.",
     tags: ["Node.js", "Server-Sent Events", "Attack Paths", "Incident Correlation", "Exposure Scoring"],
-    status: "featured",
+    link: "https://security-blast.vercel.app/",
+    status: "live",
   },
   {
     index: "03",
