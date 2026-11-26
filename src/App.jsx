@@ -16,6 +16,7 @@ import GrainPhoto from "./components/GrainPhoto";
 import LanguageName from "./components/LanguageName";
 import ExperienceGlobe from "./components/ExperienceGlobe";
 import MysteryVault from "./components/MysteryVault";
+import VisitorCounter from "./components/VisitorCounter";
 import portraitPhoto from "./assets/hemanth-photo.jpg";
 import { achievements, experience, profile } from "./data/content";
 
@@ -182,6 +183,7 @@ export default function App() {
               <Globe className="h-4 w-4" /> LinkedIn <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
           </div>
+          <VisitorCounter />
         </div>
       </section>
 
