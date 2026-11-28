@@ -20,7 +20,7 @@ function ProjectCard({ project, index }) {
       <div>
         <div className="mb-5 flex flex-wrap gap-2">{project.tags.map((tag) => <span key={tag} className="rounded-md border border-line bg-bg/60 px-2.5 py-1 font-mono text-[10.5px] text-text-dim">{tag}</span>)}</div>
         {project.link ? (
-          <a href={project.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 font-mono text-[12px] tracking-wide text-accent">Live Demo <ArrowUpRight className="h-3.5 w-3.5" /></a>
+          <a href={project.link} target="_blank" rel="noreferrer" aria-label={`Open ${project.title} live demo (opens in a new tab)`} className="inline-flex items-center gap-1.5 font-mono text-[12px] tracking-wide text-accent">Live Demo <ArrowUpRight aria-hidden="true" className="h-3.5 w-3.5" /></a>
         ) : (
           <span className="font-mono text-[12px] tracking-wide text-accent">Featured security project</span>
         )}
